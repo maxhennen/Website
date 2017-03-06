@@ -4174,12 +4174,16 @@ textarea.input-group-sm > .input-group-btn > .btn {
   right: 0;
   left: 0;
   border-width: 0 0 1px;
+    text-align: center;
+    margin-left: 200%;
 }
 
 @media (min-width: 768px) {
   .navbar-fixed-top,
   .navbar-fixed-bottom {
     border-radius: 0;
+      margin: 0;
+      padding: 0;
   }
 }
 
@@ -6831,6 +6835,8 @@ td.visible-print {
 header {
     padding-left: 150px;
     padding-right: 150px;
+    position: fixed;
+    text-align: center;
 }
 
 .container {
@@ -6838,7 +6844,30 @@ header {
     padding-right: -500px;
 }
 
-.container-fluid {
-    width: 80%;
-    height: 100px;
+body {
+    margin-top: 125px;
+}
+
+.navbar-fixed-top .nav {
+    padding: 15px 0;
+}
+
+@media (max-width: 767px) { 
+    .navbar-brand {
+        padding: 0;        
+    }
+
+    .navbar-brand img {
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+}
+
+.navbar-fixed-top > li {
+    float: right;
+}
+
+.body-content .container{
+    position: relative;
+    top: 150%;
 }

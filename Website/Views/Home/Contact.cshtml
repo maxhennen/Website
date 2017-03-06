@@ -1,0 +1,83 @@
+﻿
+@{
+    ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" />
+    <link rel="stylesheet" href="Header-Blue.css" />
+    <link rel="stylesheet" href="Map-Clean.css" />
+    <link rel="stylesheet" href="Navigation-Clean1.css" />
+    <link rel="stylesheet" href="Navigation-with-Button1.css" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Contact </h3>
+                </div>
+                <div class="col-md-6">
+                    <p>Wil je een afspraak maken?</p>
+                    <p>Heb je vragen over mijn werkwijze?</p>
+                    <p>Neem dan contact met mij op:</p>
+                    <p>Telefoon: 0683088966</p>
+                    <p>Email: max.hennen@planet.nl</p>
+                    <p>Of gebruik het contact formulier.</p>
+                </div>
+                <div class="col-md-6">
+                    <form method="post" action="/Home/AfspraakMaken">
+                        <h4>Contactformulier </h4>
+                        <h5>Onderwerp </h5>
+                        <select name="onderwerp">
+                            <optgroup label="This is a group">
+                                <option value="12" selected>This is item 1</option>
+                                <option value="13">This is item 2</option>
+                                <option value="14">This is item 3</option>
+                            </optgroup>
+                        </select>
+                        <h5>Naam *</h5>
+                        <input type="text" name="naam"/>
+                        <h5>Telefoon </h5>
+                        <input type="tel" name="telefoon"/>
+                        <h5>Emailadres *</h5>
+                        <input type="email" name="email"/>
+                        <h5>Jouw vraag</h5>
+                        <textarea name="vraag"></textarea>
+                        <input type="submit"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2513.5013894964727!2d5.774467615509964!3d50.95143355902081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0c1351a7baf15%3A0x3c72acd74e12e6f9!2sBurgemeester+Eussenstraat+52%2C+6181+BR+Elsloo!5e0!3m2!1snl!2snl!4v1486042659511" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <div class="col-md-6">
+                    <h4>Overige gegevens</h4>
+                    <p>Max Hennen</p>
+                    <p>Burgemeester Eussenstraat 52</p>
+                    <p>6181BR Elsloo</p>
+                    <p> </p>
+                    <p>Telefoon: 0683088966</p>
+                    <p>Emailadres: max.hennen@planet.nl</p>
+                    <p>Internet: maxhennen.nl</p>
+                    <p> </p>
+                    <p>IBAN: 879234987927894</p>
+                    <p>KvK: 3897342789324</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
