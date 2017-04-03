@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" />
 </head>
 <body>
-    <header>
+    <header id="header">
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="container">
 
@@ -26,16 +26,24 @@
 
                     </button>
                     <a class="navbar-brand" href="#">
-                        <img class="hidden-xs" src="/Images/logo.png" alt="" style="width: 100px; height: 100px;">
-                        <img class="visible-xs" src="/Images/logo.png" alt="" style="width: 50px; height: 50px;">
+                        <a href="/Home/Index"><img class="visible-xs" src="/Images/logo.png" alt="" style="width: 50px; height: 50px;"></a>
                     </a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Contact</a></li>
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="/Home/Index"><img class="hidden-xs" src="/Images/logo.png" alt="" style="width: 100px; height: 100px;"></a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Onderwerpen <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/Home/Studiekeuzeadvies">Studiekeuzeadvies</a></li>
+                                <li><a href="/Home/Loopbaancoaching">Loopbaan coaching</a></li>
+                                <li><a href="/Home/Solliciteren">Solliciteren</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/Home/Contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
