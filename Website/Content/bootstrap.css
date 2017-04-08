@@ -1,4 +1,4 @@
-/* NUGET: BEGIN LICENSE TEXT
+﻿/* NUGET: BEGIN LICENSE TEXT
  *
  * Microsoft grants you the right to use these script files for the sole
  * purpose of either: (i) interacting through your browser with the Microsoft
@@ -3339,7 +3339,7 @@ input[type="button"].btn-block {
 .dropup .caret,
 .navbar-fixed-bottom .dropdown .caret {
   border-top: 0 dotted;
-  border-bottom: 4px solid #000000;
+  border-bottom: 4px solid #ffffff;
   content: "";
 }
 
@@ -4176,7 +4176,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   border-width: 0 0 1px;
     text-align: center;
     margin-left: 200%;
-    background-color: #000000;
+    background-color: #ffffff;
 }
 
 @media (min-width: 768px) {

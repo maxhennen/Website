@@ -38,13 +38,14 @@ namespace Website.Controllers
 
         public ActionResult AfspraakMaken(string onderwerp, string naam, long telefoon, string email, string vraag)
         {
-            MailMessage mail = new MailMessage(email,"max.hennen@planet.nl");
+            string password = "MH-Coaching_2017";
+            MailMessage mail = new MailMessage(email,"info@mh-coaching.nl");
             SmtpClient smtp = new SmtpClient();
-            smtp.Port = 587;
+            smtp.Port = 25;
             smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
             smtp.UseDefaultCredentials = true;
-            smtp.Credentials = new System.Net.NetworkCredential("hennenmax@gmail.com", "Eussenstraat52");
-            smtp.Host = "smtp.gmail.com";
+            smtp.Credentials = new System.Net.NetworkCredential("info@mh-coaching.nl", password);
+            smtp.Host = "smtp.mijnhostingpartner.nl";
             mail.Subject = onderwerp;
             mail.Body = vraag;
             smtp.Send(mail);
