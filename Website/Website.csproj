@@ -118,13 +118,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\font-awesome.css" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Images\logo.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="wetransfer-23659a\FPN_9849.JPG" />
     <Content Include="wetransfer-23659a\MHC_kleurenstalen.png" />
     <Content Include="wetransfer-23659a\MHC_Logo 8-5_transparante achtergrond.png" />
     <Content Include="wetransfer-23659a\MHC_losse C en voetstappen_transparante achtergrond.png" />
@@ -154,9 +155,6 @@
   <ItemGroup>
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
-    <Content Include="ApplicationInsights.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
@@ -168,6 +166,8 @@
     <Content Include="Views\Home\Solliciteren.cshtml" />
     <Content Include="Views\Home\Studiekeuzeadvies.cshtml" />
     <Content Include="Views\Home\Loopbaancoaching.cshtml" />
+    <Content Include="Views\Home\Tarieven.cshtml" />
+    <Content Include="Views\Home\OverMij.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

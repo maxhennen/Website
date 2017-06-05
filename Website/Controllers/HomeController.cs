@@ -36,6 +36,16 @@ namespace Website.Controllers
             return View();
         }
 
+        public ActionResult Tarieven()
+        {
+            return View();
+        }
+
+        public ActionResult OverMij()
+        {
+            return View();
+        }
+
         public ActionResult AfspraakMaken(string onderwerp, string naam, long telefoon, string email, string vraag)
         {
             string password = "MH-Coaching_2017";

@@ -2,10 +2,18 @@
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+<div id="fb-root"></div>
+<script>
+(function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/nl_NL/sdk.js#xfbml=1&version=v2.9";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 <div>
     <div class="container">
-        <div class="row">
+        <div class="row" style="color:#67BEEC; text-align: center;">
             <div class="col-md-4">
                 <h2>Loopbaan Coaching</h2>
                 <a href="/Home/Solliciteren"><img src="/wetransfer-23659a/MHC_wegwijzer_transparante achtergrond.png" style="width: 256px" /></a>
@@ -25,36 +33,21 @@
         <div class="row">
             <div class="col-lg-6 col-md-7 col-sm-9">
                 <div class="text">
-                    <p>
-                        Sed lobortis mi. Suspendisse vel placerat ligula. <span style="text-decoration: underline;">Vivamus</span> ac sem lac. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo. Vestibulum
-                        ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.
+                    <p style="font-weight:bold;font-size:20px;">                        
+                        Samen werken aan een toekomst met perspectief
                     </p>
                     <p>
-                        Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac lacus. <strong>Ut vehicula rhoncus</strong> elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit <em>pulvinar dict</em> vel in justo. Vestibulum ante ipsum
-                        primis in faucibus orci luctus et ultrices posuere cubilia Curae.
-                    </p>
-                    <h2>Aliquam In Arcu </h2>
-                    <p>
-                        Suspendisse vel placerat ligula. Vivamus ac sem lac. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-                        cubilia Curae.
-                    </p>
-                    <figure>
-                        <img src="beach.jpg" />
-                        <figcaption>Caption</figcaption>
-                    </figure>
-                    <p>
-                        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. Suspendisse vel placerat ligula. Vivamus ac sem lac. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum
-                        vel in justo.
+                        Mariëlle Hennen Coaching biedt hulp aan mensen die meer uit zichzelf, studie of werk willen halen. Dat begint met vragen over wie je bent, wat je kunt en wat je daarmee wilt doen. Heb jij praktische vragen over je beroeps- of studiekeuze? Twijfel jij of je huidige baan nog bij je past? Of wil jij je sollicitatievaardigheden verbeteren om je kansen op die ene leuke baan te vergroten? Dan ben je bij mij aan het juiste adres.
                     </p>
                 </div>
             </div>
             <div class="col-lg-2 col-lg-offset-2 col-md-offset-1 col-sm-3">
-                <div class="toc">
-                    <p>Table of Contents</p>
-                    <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
-                    <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/max-hennen-964930a3/" data-format="inline" data-related="false">
-                    </script>
-                </div>
+                <a href="https://www.facebook.com/mariellehennencoaching/?fref=ts" class="btn btn-block btn-social btn-facebook">
+                    <span class="fa fa-facebook"></span>
+                </a>
+                <a href="https://www.linkedin.com/in/mariellehennen/" class="btn btn-block btn-social btn-linkedin">
+                    <span class="fa fa-linkedin"></span>
+                </a>
             </div>
         </div>
     </div>
