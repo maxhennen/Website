@@ -11,6 +11,7 @@ namespace Website.Controllers
     public class HomeController : Controller
     {
         // GET: Home
+   
         public ActionResult Index()
         {
             return View();
@@ -46,7 +47,7 @@ namespace Website.Controllers
             return View();
         }
 
-        public ActionResult AfspraakMaken(string onderwerp, string naam, long telefoon, string email, string vraag)
+        public ActionResult AfspraakMaken(string onderwerp, string naam, string telefoon, string email, string vraag)
         {
             string password = "MH-Coaching_2017";
             MailMessage mail = new MailMessage(email,"info@mh-coaching.nl");
@@ -56,8 +57,12 @@ namespace Website.Controllers
             smtp.UseDefaultCredentials = true;
             smtp.Credentials = new System.Net.NetworkCredential("info@mh-coaching.nl", password);
             smtp.Host = "smtp.mijnhostingpartner.nl";
+            mail.IsBodyHtml = false;
             mail.Subject = onderwerp;
-            mail.Body = vraag;
+
+            mail.Body = "Hoi Marielle," + Environment.NewLine + "Een nieuwe afspraak van " + naam + " over " + onderwerp + Environment.NewLine + "Vraag: " +
+                vraag + Environment.NewLine + "Telefoon: " + telefoon + Environment.NewLine + "Email: " + email + Environment.NewLine + "Met vriendelijke groet " + naam;
+
             smtp.Send(mail);
 
             return RedirectToAction("Contact","Home");
